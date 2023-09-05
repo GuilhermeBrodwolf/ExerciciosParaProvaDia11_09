@@ -1,0 +1,83 @@
+package javalistadeexerciciosprovadia11_09;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author guilherme_nones
+ */
+public class JavaListaDeExerciciosProvaDia11_09 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+  
+       /* 1) Elabore um algoritmoque lê o poblico total de um jogo de futebol fornece a renda do jogo, sabendo-se que havia 4 tipos de ingressos, assim distribuidos: 
+           popular 10% (R$5,00), geral 50%(R$10,00), arquibancada 30%(R$20,00), cadeira 10%(R$30,00).
+        
+        
+        System.out.println("Qual foi a quantidade de público do estádio?");
+        double totalPublico = sc.nextFloat();
+        
+        double popular;
+        System.out.println("O faturamento da área popular foi de: R$" + (popular = (totalPublico * 0.1) * 5.00));
+        
+        double geral;
+        System.out.println("O faturamento da área popular foi de: R$" + (geral = (totalPublico * 0.5) * 10));
+        
+        double arquibancada;
+        System.out.println("O faturamento da área popular foi de: R$" + (arquibancada = (totalPublico * 0.3) * 20));
+        
+        double cadeira;
+        System.out.println("O faturamento da área popular foi de: R$" + (cadeira = (totalPublico * 0.1) * 30));
+        
+        double faturamentoTotal;
+        System.out.println("O Faturamento total é de: R$" + (faturamentoTotal = popular + geral + arquibancada + cadeira));
+        
+       */ 
+         
+       /* 2. Escreva um algoritmo que leia a quantidade de combustível abastecido em um automóvel em litros, bem como, a distância que o automóvel percorre por litro abastecido.
+             O algoritmo deverá calcular e mostrar a distância máxima que o automóvel poderá atingir. 
+       
+        System.out.println("Quantos litros foram abastecidos?");
+        double litros = sc.nextDouble();
+       
+        double autonomia = 10;
+               
+        System.out.println("sabendo que o carro faz 10km por litro, a autonomia com " + litros + " litros será de: " + litros * autonomia+"km");
+               
+        */
+       
+       /* 3. O valor unitário de um livro na promoção custa R$ 12,00, caso o cliente comprar até dez livros. Caso contrário, o preço unitário do livro custa R$ 8,00. 
+             Escreva um algoritmo que leia o número de livros comprados, calcule e mostre o valor total que o cliente deverá pagar. 
+       
+        System.out.println("quntos livros foram comprados?");
+        double quantidadeLivros = sc.nextDouble();
+        
+        if(quantidadeLivros <= 10){
+            System.out.println("valor unitário do livro ficará R$12,00, total R$" + quantidadeLivros * 12.00);
+        }else
+            System.out.println("acima de 10 unidades o valor unitário abaixa para R$8,00, total R$" + quantidadeLivros * 8.00);
+       
+        */
+       
+       // 4. Escreva um algoritmo que leia um valor para a variável A e um valor para a variável B. Logo após, o algoritmo deverá fazer com que 
+       // a variável A guarde o valor da variável B e a variável B guarde o valor da variável A. Apresentar os valores das variáveis A e B antes e depois da troca. 
+
+        
+        int a = 1;
+        int b = 2;
+        int aux;
+        aux = a;
+        a = b;
+        b = aux;
+        
+        System.out.println("variável a = " + aux + "variável b = " + a);
+        System.out.println("variável a = " + a + "variável b = " + b);
+        
+        
+        
+    }
+
+}
