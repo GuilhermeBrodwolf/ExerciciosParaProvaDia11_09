@@ -1,11 +1,13 @@
 package javalistadeexerciciosprovadia11_09;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author guilherme_nones
  */
+
 public class JavaListaDeExerciciosProvaDia11_09 {
 
     public static void main(String[] args) {
@@ -75,6 +77,74 @@ public class JavaListaDeExerciciosProvaDia11_09 {
         
         System.out.println("variável a = " + aux + "variável b = " + a);
         System.out.println("variável a = " + a + "variável b = " + b);
+
+        /*
+
+        5. CALCULADORA: escreva um algoritmo para ler 2 valores e uma das seguintes operações a serem executadas (codificada   da   seguinte   forma: 
+       // (1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação). Calcular e escrever o resultado dessa operação sobre os dois valores lidos. 
+       
+       int a, b, c;
+        System.out.println("Digite o primeiro valor para operarmos");
+        a = sc.nextInt();
+        
+        System.out.println("opção 1 - soma / opção 2 - subtração / opção 3 - multiplicação / opção 4 - divisão");
+        b = sc.nextInt();
+        
+        System.out.println("Digite o segundo valor para darmos sequência na operação");
+        c = sc.nextInt();
+        
+        switch(b){
+            case 1 -> System.out.println(a + c);
+            case 2 -> System.out.println(a - c);
+            case 3 -> System.out.println(a * c);
+            case 4 -> System.out.println(a / c);
+            default -> System.out.println("escolha uma opção válida");
+        }
+            */
+ 
+        /*6. Em um torneio de atletismo as equipes são formadas por quatro jogadores. 
+        //   A equipe da Escola SóDaCampeão é formada pelos seguintes atletas: João, Chico, Pedro e Bola. Algumas restrições podem ocasionar a desclassificação da equipe, são elas: 
+        //a) O jogador João não pode ter um número de pontos menor que a metade da soma dos pontos dos demais jogadores que compõem a equipe. 
+        //b) O jogador Pedro não pode ficar com o triplo de pontos do jogador bola. 
+        //c) O jogador Chico não pode ficar com zero pontos. 
+        //d) O jogador Bola pode ficar com até metade dos pontos do jogador Pedro ou abaixo da soma de pontos dos jogadores João e chico. 
+        //Sendo assim, elabore um algoritmo que leia a pontuação de cada um dos jogadores citados. Após, verifique e mostre se a equipe foi ou não desclassificada. 
+        // System.out.println("Quantos pontos João fez?");
+        // double joao = sc.nextDouble();
+        double joao = Double.parseDouble(JOptionPane.showInputDialog("Quantos pontos João fez?"));
+        // System.out.println("Quantos pontos Chico fez?");
+        // double chico = sc.nextDouble
+        double chico = Double.parseDouble(JOptionPane.showInputDialog("Quantos pontos Chico fez?"));
+        // System.out.println("Quantos pontos Pedro fez?");
+        // double pedro = sc.nextDouble();;
+        double pedro = Double.parseDouble(JOptionPane.showInputDialog("Quantos pontos Pedro fez?"));
+        // System.out.println("Quantos pontos Bola fez?");
+        // double bola = sc.nextDouble();;
+        double bola = Double.parseDouble(JOptionPane.showInputDialog("Quantos pontos Bola fez?"));
+        double total = joao + chico + pedro + bola;
+        System.out.println(total + " Foi o total de pontos da equipe SóDaCampeão");
+        //double total = Double.parseDouble(JOptionPane.showInputDialog(total + " Foi o total de pontos da equipe SóDaCampeão"));
+        
+        if (joao < (chico + pedro + bola) / 2)
+        {
+            System.out.println("O time perdeu porque João fez menos da metade dos pontos da soma dos demais jogadores");
+        }
+        else if (pedro*3 == bola)
+        {
+            System.out.println("Perdemos, pois o jogador Pedro ficou com o triplo de pontos do que o jogador Bola");
+        }
+        else if (chico < 1)
+        {
+            System.out.println("Perdemos, pois o jogador Chico ficou com zero pontos");
+        }
+    
+        else if (bola > pedro + chico || bola <= pedro / 2)
+        {
+            System.out.println("Perdemos, pois o jogador bola ficou com mais pontos que João e Chico");
+        }
+        else{System.out.println("O time ainda está no jogo");}
+ 
+            */
         
         
         
